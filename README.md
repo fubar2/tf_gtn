@@ -1,2 +1,2 @@
 # tf_gtn
-Dockerfile used to build quay.io/fubar2/toolfactory_tutorial
+Just the Dockerfile used to build quay.io/fubar2/toolfactory_tutorial
