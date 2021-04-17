@@ -36,7 +36,7 @@ RUN apt-get update \
 && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
 && apt-get -y update  \
 && apt install -y docker-ce-cli
-RUN python3 -m pip install --upgrade pip \
+&& python3 -m pip install --upgrade pip \
 && mkdir -p $TARGDIR \
 && curl -L -s https://github.com/galaxyproject/galaxy/archive/dev.tar.gz | tar xzf - --strip-components=1 -C $TARGDIR \
 && git clone --recursive https://github.com/fubar2/planemo.git $PDIR \
